@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfl3mch4hisl6"]
+
+[ext_resource type="Script" path="res://scripts/monster kelp.gd" id="1_x8f42"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_as0in"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" groups=["feelers"]]
+script = ExtResource("1_x8f42")
+
+[node name="feeler" type="CharacterBody3D" parent="." groups=["feelers"]]
+motion_mode = 1
+
+[node name="feeler hit box" type="CollisionShape3D" parent="feeler"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+shape = SubResource("SphereShape3D_as0in")

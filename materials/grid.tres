@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b1woaf1sk8s22"]
+
+[ext_resource type="Texture2D" uid="uid://bhjxmfo1nyq83" path="res://graphics/texture_09.png" id="1_a4lq8"]
+
+[resource]
+shading_mode = 0
+diffuse_mode = 3
+albedo_texture = ExtResource("1_a4lq8")
+uv1_triplanar = true
+disable_receive_shadows = true
